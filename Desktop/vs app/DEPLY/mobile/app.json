@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "College LMS",
+    "slug": "college-lms",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#EEF4FF"
+      }
+    },
+    "extra": {
+      "apiBaseUrl": "http://172.20.10.3:5051/api/v1"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      "@react-native-community/datetimepicker"
+    ]
+  }
+}
