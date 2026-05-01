@@ -31,18 +31,7 @@ const allowedOrigins = parseAllowedOrigins();
 
 app.use(
   cors({
-    origin: (origin, cb) => {
-      // Non-browser clients (React Native, curl) often have no Origin header.
-      if (!origin) return cb(null, true);
-
-      // In local development, be permissive to avoid CORS blocking Expo web preview.
-      if (process.env.NODE_ENV !== "production") return cb(null, true);
-
-      // In production, restrict to configured origins.
-      if (allowedOrigins.includes("*")) return cb(null, true);
-      if (allowedOrigins.includes(origin)) return cb(null, true);
-      return cb(new Error("Not allowed by CORS"));
-    },
+    origin: true, // Allow all origins for easier testing and local/cloud connectivity
     credentials: true
   })
 );

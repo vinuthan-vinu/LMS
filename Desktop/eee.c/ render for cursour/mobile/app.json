@@ -17,7 +17,7 @@
       }
     },
     "extra": {
-      "apiBaseUrl": "http://172.20.10.3:5051/api/v1"
+      "apiBaseUrl": "https://lms-production-640d.up.railway.app/api/v1"
     },
     "plugins": [
       "expo-asset",
